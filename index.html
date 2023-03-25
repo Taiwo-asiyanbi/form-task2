@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>form</title>
+</head>
+<body>
+    <div class="wrapper">
+      <h1>sign up</h1>
+      <form method="post" onsubmit="myFunction()">
+        <input type="text"  id="username"  placeholder="username" required>
+        <input type="text" id="name"  placeholder="Name" required>
+        <input type="password" id="password"  placeholder="password" required>
+        <input type="password" id="password"  placeholder="Re-enter password" required>
+        <input type="email" id="e-mail" placeholder="e.g 1234@gmail.com"  required>
+        
+        
+      <!-- </form> -->
+     <div class="terms">
+        <input type="checkbox" id="checkbox">
+        <label for="checkbox">I agree to these <a href="#">terms & conditions</a></label>
+     </div>
+     <!-- <button>sign up</button> -->
+     <input type="submit" id="sign-up" value="sign up" >
+     <div class="member">
+        Already a member?<a href="/login.html">login Here</a>
+     </div>
+</form>
+    </div>
+    <script>
+        function myFunction() {
+            alert("the form was submitted succesfully");
+        }
+     </script>
+</body>
+</html>
